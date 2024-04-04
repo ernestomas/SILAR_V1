@@ -66,6 +66,7 @@ void loop() {
             crane.step(f_altura[i], FORWARD, MICROSTEP);
             if (i<beakers-1){
               int p=f_posiciones[i+1]-f_posiciones[i];
+              
               for (int k=1; k<=p; k++){
                 if (sentido =="FORWARD"){
                   delay(1);
@@ -102,4 +103,3 @@ void fun(int num, String list, int list2[]){
     pos = coma;
   }
 }
-
